@@ -33,6 +33,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get install -y graphviz
+        pip install wheel
         pip install git+https://github.com/cylc/cylc-flow/  # install latest cylc-flow
         pip install -e .[all]
 
